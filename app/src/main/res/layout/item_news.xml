@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     android:padding="8dp">
 
-    <!-- Image de l'article -->
     <ImageView
         android:id="@+id/news_image"
         android:layout_width="0dp"
@@ -16,7 +15,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Titre de l'article -->
     <TextView
         android:id="@+id/news_title"
         android:layout_width="0dp"
@@ -31,7 +29,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Description de l'article -->
     <TextView
         android:id="@+id/news_description"
         android:layout_width="0dp"

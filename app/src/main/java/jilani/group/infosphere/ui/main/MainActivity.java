@@ -36,28 +36,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(newsAdapter);
 
         fetchNews();
-        //tet();
-    }
 
-    public void tet(){
-        NewsApiService apiService = ApiClient.getClient().create(NewsApiService.class);
-
-        Call<NewsResponse> call = apiService.getTopHeadlines("us", "business", API_KEY);
-        call.enqueue(new Callback<NewsResponse>() {
-            @Override
-            public void onResponse(Call<NewsResponse> call, Response<NewsResponse> response) {
-                if (response.isSuccessful() && response.body() != null) {
-                    Log.d("API_SUCCESS", "Articles: " + response.body().getArticles().size());
-                } else {
-                    Log.e("API_ERROR", "Response code: " + response.code());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<NewsResponse> call, Throwable t) {
-                Log.e("API_FAILURE", t.getMessage());
-            }
-        });
     }
 
     private void fetchNews() {
