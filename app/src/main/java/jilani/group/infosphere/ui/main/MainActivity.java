@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(newsAdapter);
 
         fetchNews();
-        tet();
+        //tet();
     }
 
     public void tet(){
