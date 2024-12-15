@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/primary"
-    >
+     >
     <item
-        android:id="@+id/action_partager"
+        android:id="@+id/action_filter"
         android:enabled="true"
-        android:icon="@drawable/next_icon_1"
-        android:title="Partager"
+        android:icon="@drawable/filter_icon_1"
+        android:title="Filter"
         android:visible="true"
         app:showAsAction="always" />
 
-</menu>
+   </menu>

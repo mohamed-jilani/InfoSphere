@@ -33,27 +33,46 @@
                 android:textStyle="bold"
                 android:text="Shah Rukh Khan ever cheat on wife Gauri with Priyanka Chopra? Here’s the truth - Asianet Ne"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:maxLines="2"
+                android:ellipsize="end"/>
 
             <TextView
                 android:padding="15dp"
                 android:id="@+id/news_description"
                 android:text="Shah Rukh Khan ever cheat on wife Gauri with Priyanka Chopra? Here’s the truth - Asianet Ne"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/btn_more"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="15dp"
-                android:background="#2196F3"
-                android:padding="10dp"
-                android:text="Read More"
-                android:textColor="@color/white"
-                app:cornerRadius="20dp" />
+                android:textColor="@color/text_secondary"
+                android:maxLines="3"
+                android:ellipsize="end"/>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btn_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/details_icon" />
+
+                <ImageButton
+                    android:id="@+id/btn_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/open_icon" />
+            </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
